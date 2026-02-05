@@ -1,0 +1,12 @@
+string = input("Enter a string: ")
+
+first_char = string[0]
+result = first_char
+
+for ch in string[1:]:
+    if ch == first_char:
+        result += '$'
+    else:
+        result += ch
+
+print("Modified string:", result)
